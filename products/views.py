@@ -10,9 +10,9 @@ class ProductFormView(generic.FormView):
     success_url = reverse_lazy('add_product')
 
     
-    def form_invalid(self, form):
+    def form_valid(self, form):
         form.save()
-        return super().form_invalid(form)
+        return super().form_valid(form)
     
 
 class ProductListView(generic.ListView):
