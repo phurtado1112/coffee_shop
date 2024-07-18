@@ -11,7 +11,7 @@ class Order(models.Model):
         return f'Order { self.id} by {self.user}'
 
 
-class OrderProduct(models.Manager):
+class OrderProduct(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     product = models.ForeignKey(Product,on_delete=models.PROTECT)
     quantity = models.IntegerField()
