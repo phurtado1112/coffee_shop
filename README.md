@@ -19,7 +19,7 @@ Follow these steps to get the project up and running on your local machine.
 Clone the project repository from GitHub to your local machine.
 
 ```bash
-git clone https://github.com/platzi/django.git coffee_shop
+git clone https://github.com/phurtado1112/coffee_shop.git
 cd coffee_shop
 ```
 
@@ -29,8 +29,8 @@ Create and activate a virtual environment.
 
 
 ```bash
-python3.11 -m venv venv 
-source venv/bin/activate 
+python3.11 -m venv .venv 
+source .venv/bin/activate 
 ```
 
 ### 3\. Install Dependencies
@@ -53,7 +53,7 @@ Update the `.env` file with your database credentials and other necessary config
 Create the PostgreSQL database and apply migrations.
 
 ```bash
-psql -U postgres CREATE DATABASE coffeeshop;
+psql -U postgres CREATE DATABASE coffee_shop;
 ```
 Apply migrations 
 
